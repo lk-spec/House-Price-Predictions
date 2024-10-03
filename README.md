@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+House-Price-Prediction-Using-Real-Estate-Data
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a machine learning project that predicts house prices using linear regression with L2 regularization. The model was trained using a dataset of house features, and evaluated using R2, MSE, RMSE, and MAE metrics.
 
-## Available Scripts
+Technologies Used
 
-In the project directory, you can run:
+Python
+Jupyter Notebook
+Scikit-learn
+Flask
+ReactJS
+Dataset
 
-### `npm start`
+The dataset used for training and testing the model has been obtained from Kaggle, which contains information about house prices and features such as the number of bedrooms, bathrooms, and square footage etc.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Model Building
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The model was built using linear regression and was tested with L1 and L2 regularization, and recursive feature elimination. L2 Regulairzation was selected as the training algorithm as it gave the most efficient results.
 
-### `npm test`
+Application Deployment
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The application was deployed using Flask as the backend framework and ReactJS as the frontend framework. Users can input house features such as the number of bedrooms, bathrooms, and square footage, and the model will predict the house price.
 
-### `npm run build`
+Evaluation Metrics
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The model was evaluated using the following metrics:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+R2 (Coefficient of determination)
+MSE (Mean squared error)
+RMSE (Root mean squared error)
+MAE (Mean absolute error)
+Conclusion
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The house price prediction model achieved an R2 score of 0.46, a mean absolute error of 0.19, a root mean squared error of 0.27, and a mean squared error of 0.073. These metrics indicate that the model has room for improvement, but it can still provide useful predictions for house prices.
 
-### `npm run eject`
+Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To run the project, first install the required Python packages using the following command:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+pip install -r requirements.txt
+Then, start the Flask server using the following command:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+python app.py
+Finally, open the ReactJS frontend by navigating to http://localhost:3000 in your web browser.
